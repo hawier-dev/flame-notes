@@ -2,8 +2,5 @@
     border-bottom: 0.5px solid rgba(128, 128, 128, 0.479);
 }
 .default-radius{
-    border-radius: 20px;
-}
-.button-radius{
     border-radius: 5px;
 }
