@@ -19,5 +19,4 @@ from noteapp import views
 
 urlpatterns = [
     path("", include('noteapp.urls')),
-    path('admin/', admin.site.urls),
 ]
