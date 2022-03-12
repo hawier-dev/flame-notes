@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="{% static "noteapp/colors.css" %}">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
+    <title>Flame Notes</title>
+</head>
+<body style="height:100vh;" class="uk-background-secondary">
+    <div class="uk-card-body uk-light">
+        <img class=" uk-margin-remove-adjacent" src="{% static "noteapp/logo.png" %}" width="32" height="32" alt="Logo">
+        <a  class="uk-text-bolder uk-text-center uk-text-default" href="#">Flame Notes</a>
+    </div>
+    <div class="uk-child-width-1-4@m uk-grid-small uk-grid-match" uk-grid>
+        {% if notes_list %}
+            {% for note in notes_list %}
+            <div>
+                <div class="primary-bg md-bg-indigo-50 uk-card uk-border-rounded uk-card-body">
+                    <h3 class="uk-card-title uk-text-bold">{{ note.title }}</h3>
+                    <p>{{ note.description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    
+</body>
+</html>
