@@ -1,3 +1,31 @@
-.primary-bg{
-    background-color: #49E591;
+.primary{
+    background-color: #E6C440;
+}
+.bg{
+    background-color: #161615;
+}
+.secondary{
+    background-color: #D3C6A1;
+}
+.surface{
+    background-color: #161616;
+}
+.error{
+    background-color: #930006;
+}
+.on-primary{
+    color: #3B2F00;
+}
+.black{
+    color: black;
+}
+.primary-button{
+    background-color: #E6C440;
+    color: #3B2F00;
+}
+.primary-button:hover{
+    background-color: #ffd83d;
+}
+.white-text{
+    color: white;
 }
