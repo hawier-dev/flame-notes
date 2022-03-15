@@ -1,5 +1,4 @@
 from django.shortcuts import redirect, render
-from rest_framework import viewsets
 from .models import Note
 from django.shortcuts import render
 from .forms import NoteForm

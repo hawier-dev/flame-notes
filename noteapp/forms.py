@@ -5,7 +5,7 @@ class NoteForm(forms.ModelForm):
     title = forms.CharField(max_length=120,required=True,widget=forms.widgets.TextInput(
             attrs={
                 "placeholder": "Title",
-                "class": "uk-input button-radius",
+                "class": "uk-input default-radius",
             }
         ),
         label="",
@@ -13,7 +13,7 @@ class NoteForm(forms.ModelForm):
     description = forms.CharField(max_length=500,required=False,widget=forms.widgets.Textarea(
             attrs={
                 "placeholder": "Description",
-                "class": "uk-textarea button-radius",
+                "class": "uk-textarea default-radius",
             }
         ),
         label="",

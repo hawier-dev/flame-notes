@@ -4,15 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css" />
-    <link rel="stylesheet" href="{% static "noteapp/colors.css" %}">
-    <link rel="stylesheet" href="{% static "noteapp/styles.css" %}">
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
     <title>Flame Notes</title>
+    <style>
+        .primary{
+            background-color: #E6C440;
+        }
+        .bg{
+            background-color: #161615;
+        }
+        .secondary{
+            background-color: #D3C6A1;
+        }
+        .surface{
+            background-color: #161616;
+        }
+        .error{
+            background-color: #930006;
+        }
+        .on-primary{
+            color: #3B2F00;
+        }
+        .black{
+            color: black;
+        }
+        .primary-button{
+            background-color: #E6C440;
+            color: #3B2F00;
+        }
+        .primary-button:hover{
+            background-color: #ffd83d;
+        }
+        .white-text{
+            color: white;
+        }
+        .minimal-border-bottom{
+            border-bottom: 0.5px solid rgba(128, 128, 128, 0.479);
+        }
+        .default-radius{
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body style="height:100vh;" class="bg">
     <div class="minimal-border-bottom uk-padding-small surface">
-        <img class="uk-margin-left uk-margin-remove-adjacent" src="{% static "noteapp/logo.png" %}" width="32" height="32" alt="Logo">
+        <svg class="uk-margin-left uk-margin-remove-adjacent" width="32" height="32" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_513_2)">
+            <path d="M151.913 9C160.264 9 168.273 12.3176 174.179 18.223C180.084 24.1283 183.402 32.1377 183.402 40.4892V105.89H137.379C129.028 105.89 121.018 109.207 115.113 115.113C109.207 121.018 105.89 129.028 105.89 137.379V183.402H40.4892C32.1378 183.402 24.1283 180.084 18.223 174.179C12.3176 168.273 9 160.264 9 151.913V40.4892C9 32.1377 12.3176 24.1283 18.223 18.223C24.1283 12.3176 32.1378 9 40.4892 9H151.913ZM179.139 120.423L120.423 179.139V137.379C120.423 128.019 128.02 120.423 137.379 120.423H179.139Z" fill="#E6C440"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_513_2">
+            <rect width="192" height="192" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>            
         <a class="uk-margin-left uk-text-bolder uk-text-center uk-text-default uk-light" href="#">Flame Notes</a>
         <a class="uk-margin-left uk-button uk-button primary-button uk-text-bold button-color default-radius" href="#new-note-modal" uk-toggle>New note</a>
     </div>

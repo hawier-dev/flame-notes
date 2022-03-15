@@ -1,3 +1,0 @@
-martor
-gunicorn
-django
