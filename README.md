@@ -1,3 +1,3 @@
 # flame-notes
 
-## Note app project build with django and python.
+## Note app project build with [Django](https://www.djangoproject.com/).
