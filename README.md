@@ -3,6 +3,9 @@
 ___________________
 Start app with: 
 ```
+git clone https://github.com/hawier-dev/flame-notes.git
+cd flame-notes
+pip install -r requirements.txt
 python manage.py runserver
 ```
 ___________________
