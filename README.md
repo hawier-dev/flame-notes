@@ -1,5 +1,5 @@
 # Flame notes
-### Note app project build with [Django](https://www.djangoproject.com/).
+### Note app project built with [Django](https://www.djangoproject.com/).
 ___________________
 Start app with: 
 ```
